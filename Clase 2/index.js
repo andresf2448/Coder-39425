@@ -136,3 +136,40 @@ if(condicion1){
 // }else {
 //   console.log("Ingrese un nombre válido");
 // }
+
+/* 
+condicion1 && condicion2 => es verdadera siempre y cuando las dos condiciones sean verdaderas en caso contrario es falso
+
+condicion1 || condicion2 => es verdadera siempre y cuando al menos una de las dos sea verdadera en caso contrario es falsa
+*/
+
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && false);
+
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || false);
+
+// if("andres"){
+//   console.log("entramos al if");
+// }else{
+//   console.log("no entramos al if");
+// }
+
+let nombre = prompt("Ingrese el nombre");
+
+// if(nombre === "pepito" || nombre === "PEPITO"){
+//   alert("Hola pepito");
+// }else{
+//   alert("No eres pepito");
+// }
+
+if(nombre.toUpperCase() === "PEPITO"){
+  alert("Hola pepito");
+}else{
+  alert("No eres pepito");
+}
+
+//toUpperCase()  convierte un string en mayúscula
+//toLowerCase()  convierte un string en minúscula
