@@ -156,5 +156,3 @@ switch(moneda){
     console.log("Moneda no reconocida");
     break;
 }
-
-if(moneda === "ars" || moneda === "arsd")
