@@ -120,17 +120,32 @@ estructura de un arreglo
 
 // eliminar("camilo");
 
-const productos = [
-  { id: 1, nombre: "pantalon", precio: 1000 },
-  { id: 2, nombre: "camisa", precio: 1000 },
-  { id: 3, nombre: "gorra", precio: 1000 },
-  { id: 4, nombre: "zapato", precio: 1000 },
-];
+// const productos = [
+//   { id: 1, nombre: "pantalon", precio: 1000 },
+//   { id: 2, nombre: "camisa", precio: 1000 },
+//   { id: 3, nombre: "gorra", precio: 1000 },
+//   { id: 4, nombre: "zapato", precio: 1000 },
+// ];
 
 // for(let index = 0; index < productos.length; index++){
 //   console.log(productos[index].nombre);
 // }
 
-for(const producto of productos){
-  console.log(producto.nombre);
-}
+// for(const producto of productos){
+//   console.log(producto.nombre);
+// }
+
+// console.log(productos.includes({ id: 4, nombre: "zapato", precio: 1000 }));
+
+// let nombre1 = "andres";
+// let nombre2 = nombre1;
+
+// nombre2 = "camila";
+
+// console.log(nombre1);
+
+let objeto1 = {nombre: "camila", edad: 20};
+let objeto2 = objeto1;
+
+objeto2.nombre = "andres";
+console.log(objeto1);
