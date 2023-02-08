@@ -83,17 +83,17 @@ let productos = [
 // alert(mensaje);
 
 //filter filtra los elementos que cumplan la condicion dada
-// let precio = parseInt(prompt("Ingrese el valor mínimo del producto"));
-// let filtrados = productos.filter((item) => item.precio > precio);
+let precio = parseInt(prompt("Ingrese el valor mínimo del producto"));
+let filtrados = productos.filter((item) => item.precio > precio);
 
-// filtrados.forEach((item) => {
-//   let mensaje = `
-//     Id: ${item.id}
-//     Nombre: ${item.nombre}
-//     Precio: $${item.precio}
-//   `;
-//   alert(mensaje);
-// });
+filtrados.forEach((item) => {
+  let mensaje = `
+    Id: ${item.id}
+    Nombre: ${item.nombre}
+    Precio: $${item.precio}
+  `;
+  alert(mensaje);
+});
 
 // let precio = parseInt(prompt("Ingrese el valor mínimo del producto"));
 // let filtrados = productos.filter((item) => item.precio > precio);
