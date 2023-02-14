@@ -72,7 +72,7 @@ const productos = [
 productos.forEach(item => {
   let div = document.createElement("div");
   div.innerHTML = `
-    <h2>Id: ${item.id}</h2>
+    <h2 >Id: ${item.id}</h2>
     <p>Nombre: ${item.nombre}</p>
     <b>$${item.precio}</b>
   `;
