@@ -69,6 +69,8 @@ formulario.addEventListener("submit", (e) => {
   e.preventDefault();
   
   let inputs = e.target.children;
+
+  console.log(inputs);
   
   if(!inputs[0].value.includes("@")){
     inputs[0].value = "";
