@@ -20,12 +20,30 @@
 // let precio = parseInt(prompt("Ingrese el nuevo precio"));
 // modificarPrecio(nombre, precio);
 
-let objeto = {
-  nombre: "asdf",
-  edad: 13
+// let objeto = {
+//   nombre: "asdf",
+//   edad: 13
+// };
+
+// localStorage.setItem("objeto", JSON.stringify(objeto));
+
+// let traido = JSON.parse(localStorage.getItem("objeto"));
+// console.log(traido);
+
+const crearProducto = (nombre, precio) => {
+  let productos = JSON.parse(localStorage.getItem("productos"));
+
+  let producto = {
+    id: productos.length + 1,
+    nombre,
+    precio,
+  };
+
+  productos.push(producto);
+  localStorage.setItem("productos", JSON.stringify(productos));
 };
 
-localStorage.setItem("objeto", JSON.stringify(objeto));
+let nombre = prompt("Ingrese el nombre");
+let precio = parseInt(prompt("Ingrese el precio"));
 
-let traido = JSON.parse(localStorage.getItem("objeto"));
-console.log(traido);
+crearProducto(nombre, precio);
